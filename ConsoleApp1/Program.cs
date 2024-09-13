@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 internal class Program
 {
-    private static void Main(string[] args)
+    
+    public static void Main(string[] args)
     {
         string response;
-        string anwser;
+        
         response = Console.ReadLine();
         Converter(response);
         static void Converter(string value)
@@ -20,11 +20,9 @@ internal class Program
             else
             {
                 value = "Not a binary number";
-                Console.WriteLine(value);
             }
         }
-        }
-
+        Console.WriteLine(value);
+        }     
     }
-     //Binary To Decimal converter
 }
